@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.42.233.108:3306/ocdb?useUnicode=yes&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: Ahmckj.2017
+  session:
+    store-type: redis
+security:
+  basic:
+    enabled: true
+server:
+  port: 8080
