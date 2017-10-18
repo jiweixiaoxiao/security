@@ -20,7 +20,7 @@ public class UserController {
     @GetMapping("/user")
     public List<User> query(@RequestParam() String username){
         System.out.println(username);
-        List<User> user = new ArrayList<User>();
+        List<User> user = new ArrayList<>();
         user.add(new User());
         user.add(new User());
         user.add(new User());
