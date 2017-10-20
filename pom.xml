@@ -11,7 +11,7 @@
 
 
     <properties>
-        <security.version>1.0.0-SNAPSHOT</security.version>
+        <security.version>1.0-SNAPSHOT</security.version>
     </properties>
 
 
@@ -42,10 +42,10 @@
         </dependencies>
     </dependencyManagement>
     <modules>
-        <module>security-core</module>
         <module>security-app</module>
-        <module>security-demo</module>
         <module>security-browser</module>
+        <module>security-core</module>
+        <module>security-demo</module>
     </modules>
 
     <build>

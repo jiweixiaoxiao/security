@@ -1,7 +1,8 @@
-package com.uizhi.web.controller;
+package com.uizhi.controller;
 
 import com.uizhi.dto.User;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
