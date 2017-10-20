@@ -1,10 +1,7 @@
 package com.uizhi.controller;
 
 import com.uizhi.dto.User;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +15,8 @@ import java.util.List;
  */
 @RestController
 public class UserController {
-    @GetMapping("/user")
-    public List<User> query(@RequestParam() String username){
-        System.out.println(username);
+    @RequestMapping(value = "/user", method = RequestMethod.GET)
+    public List<User> query(){
         List<User> user = new ArrayList<>();
         user.add(new User());
         user.add(new User());
