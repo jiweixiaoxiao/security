@@ -2,6 +2,7 @@ package com.uizhi.controller;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.uizhi.dto.User;
+import com.uizhi.exception.UserNotExitsException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +34,9 @@ public class UserController {
 
     @GetMapping(value = "/{id:\\d+}")
     @JsonView(User.UserDetailView.class)
-    public User getInfo(@PathVariable String id) {
+    public User getInfo(@PathVariable Integer id) {
+    //    throw new UserNotExitsException(id);
+        System.out.println("调用getinfo()服务");
         User user = new User();
         user.setUserName("lisi");
         return user;
