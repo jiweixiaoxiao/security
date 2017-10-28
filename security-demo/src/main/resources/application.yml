@@ -11,7 +11,12 @@ security:
     enabled: true
 server:
   port: 8080
+#uizhi:
+#  security:
+#      browser:
+#         loginPage: /demo-signIn.html
+
 uizhi:
   security:
       browser:
-         loginPage: /demo-signIn.html
+         loginType: REDIRECT

@@ -10,6 +10,9 @@
     <artifactId>security-browser</artifactId>
     <packaging>jar</packaging>
     <dependencies>
+
+
+
         <dependency>
             <groupId>com.uizhi</groupId>
             <artifactId>security-core</artifactId>
